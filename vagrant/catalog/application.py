@@ -57,8 +57,6 @@ def deleteCategoryItem(main_page_id, categories_id):
         session.commit()
         return redirect(url_for('MainpageCategories', main_page_id=main_page_id))
     else:
-        # USE THE RENDER_TEMPLATE FUNCTION BELOW TO SEE THE VARIABLES YOU
-        # SHOULD USE IN YOUR EDITMENUITEM TEMPLATE
         return render_template('DeleteCategoryItem.html', i=deleteItem)
 
 
